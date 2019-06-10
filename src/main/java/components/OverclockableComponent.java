@@ -5,6 +5,9 @@ public abstract class OverclockableComponent extends Component {
     private int maxWorkTemperature, overclockHeatFactor, currentTemperature;
     private double clockFrequencyInHundMhz;
 
+    public OverclockableComponent() {
+    }
+
     public double getClockFrequencyInMhz() {
         return clockFrequencyInHundMhz;
     }

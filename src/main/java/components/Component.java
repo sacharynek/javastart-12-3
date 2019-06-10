@@ -4,6 +4,9 @@ public abstract class Component {
 
     private String model, producer, serialNo;
 
+    public Component() {
+    }
+
     public Component(String model, String producer, String serialNo) {
         this.model = model;
         this.producer = producer;
