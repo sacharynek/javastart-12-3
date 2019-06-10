@@ -8,20 +8,20 @@ public abstract class OverclockableComponent extends Component {
     public OverclockableComponent() {
     }
 
-    public double getClockFrequencyInMhz() {
-        return clockFrequencyInHundMhz;
-    }
-
-    public void setClockFrequencyInMhz(double clockFrequencyInMhz) {
-        this.clockFrequencyInHundMhz = clockFrequencyInMhz;
-    }
-
     public OverclockableComponent(String model, String producer, String serialNo, int maxWorkTemperature, int overclockHeatFactor) {
         super(model, producer, serialNo);
         this.maxWorkTemperature = maxWorkTemperature;
         this.overclockHeatFactor = overclockHeatFactor;
         this.currentTemperature = 30;
         this.clockFrequencyInHundMhz = 10;
+    }
+
+    public double getClockFrequencyInMhz() {
+        return clockFrequencyInHundMhz;
+    }
+
+    public void setClockFrequencyInMhz(double clockFrequencyInMhz) {
+        this.clockFrequencyInHundMhz = clockFrequencyInMhz;
     }
 
     public int getCurrentTemperature() {

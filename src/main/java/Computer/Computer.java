@@ -16,11 +16,11 @@ public class Computer {
         this.hdd = hdd;
     }
 
-    public boolean overclockProcessor(int hundMhz){
+    public boolean overclockProcessor(int hundMhz) {
         return this.processor.overclock(hundMhz);
     }
 
-    public boolean overclockRam(int hundMhz){
+    public boolean overclockRam(int hundMhz) {
         return this.ram.overclock(hundMhz);
     }
 
